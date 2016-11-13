@@ -5,7 +5,7 @@ self.addEventListener('install', function(evt) {
    evt.waitUntil(precache());
 });
 self.addEventListener('fetch', function(evt) {
-  if (request.method === 'GET') {
+  if (evt.request.method === 'GET') {
     console.log('The service worker is serving the asset.');
     evt.respondWith(fromCache(evt.request));
   }
