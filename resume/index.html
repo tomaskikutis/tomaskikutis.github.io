@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Tomas Kikutis | Front-End Engineer | EU | tkikutis@gmail.com | +37063075928</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0
+        }
+        
+        code,
+        em,
+        strong {
+            line-height: 1
+        }
+
+        strong {
+            font-weight: normal;
+            font-weight: bold;
+        }
+        
+        html {
+            font-size: 16px
+        }
+        
+        body {
+            background-color: #fffef8;
+            border-top: 0.5em solid #c35;
+            padding-top: 0.2em;
+            color: #456;
+            font-family: 'Lato', sans-serif;
+            -webkit-font-feature-settings: 'liga', 'kern';
+            font-feature-settings: 'liga', 'kern';
+            line-height: 1.4em
+        }
+        
+        #content,
+        #teaser,
+        #footer {
+            padding: 1.4em;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 36em
+        }
+        
+        #content {
+            padding-top: 0
+        }
+        
+        header {
+            font-family: 'Lato', sans-serif;
+            margin-left: 1em;
+            margin-right: 1em;
+            overflow: hidden;
+            text-align: center
+        }
+        
+        h1 {
+            color: #000;
+            font-size: 2.8em;
+            line-height: 2.8rem;
+            margin-bottom: 0.7rem;
+            padding-top: 2.8rem
+        }
+
+        header>h1 {
+            padding-top: 1.4rem;
+            margin-bottom: 0;
+        }
+        
+        header>h2 {
+            font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+            -webkit-font-feature-settings: 'dlig';
+            font-feature-settings: 'dlig';
+            font-size: 1.4em;
+            font-style: italic;
+            font-weight: normal;
+            line-height: 1.4rem;
+            margin-bottom: 0.4rem;
+            padding-top: 0.4rem;
+        }
+
+        header h2:before,
+        header h2:after {
+            display: none;
+        }
+        
+        header>p {
+            color: #c35;
+            padding-top: 0.5em;
+            padding-bottom: 0.9em;
+            margin-bottom: 0
+        }
+        
+        h1>br {
+            display: none
+        }
+        
+        p,
+        nav {
+            margin-bottom: 1em;
+            padding-top: 0.4em
+        }
+        
+        a {
+            color: #c35;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        h2 {
+            position: relative;
+            font-family: 'Lato', sans-serif;
+            font-size: 1.4em;
+            line-height: 1em;
+            margin-bottom: 1.60rem;
+            padding-top: 1.2rem;
+        }
+
+        h2 + p {
+            padding-top: 0;
+        }
+
+        h2:before {
+            content: "< ";
+            color: #c35;
+        }
+
+        h2:after {
+            content: " />";
+            color: #c35;
+        }
+        
+        h3 {
+            font-size: 1em;
+            clear: both;
+            float: left;
+            padding: 0 0.2em;
+            background: #c35;
+            color: #fff;
+            box-shadow: 0px 0px 0px 4px #c35;
+            position: relative;
+            left: 4px;
+            margin-right: 0.7em;
+        }
+
+        @media print { 
+            h3 {
+                position: relative;
+                top: -0.05em;
+                left: 0;
+                margin-right: 0.4em;
+                color: #c35;
+                border: 0.1em solid #c35;
+                margin-bottom: -0.2em;
+            }
+        }
+
+        h3 + p {
+            padding-top: 0;
+        }
+
+        ul {
+            padding-bottom: 1em;
+        }
+
+        p + ul {
+            padding-top: 0;
+            margin-top: -0.5em;
+        }
+
+        h3>a {
+            color: inherit
+        }
+        
+        abbr,
+        .smcp {
+            -webkit-font-feature-settings: 'smcp', 'c2sc';
+            font-feature-settings: 'smcp', 'c2sc';
+            letter-spacing: 0.1em
+        }
+        
+        abbr {
+            letter-spacing: 0.03em;
+            margin-right: -0.03em
+        }
+        
+        .run-in {
+            -webkit-font-feature-settings: 'smcp';
+            font-feature-settings: 'smcp';
+            letter-spacing: 0.05em
+        }
+        
+        .archive h2 {
+            color: #ccc;
+            font-size: 2.8em;
+            letter-spacing: 1rem;
+            margin-bottom: 0.6rem;
+            padding-top: 0.8rem
+        }
+        
+        ul,
+        ol {
+            counter-reset: ol;
+            list-style: none;
+            margin-bottom: 1em;
+            padding-top: 0.4em
+        }
+        
+        li {
+            margin-left: 1em
+        }
+        
+        li:before {
+            display: inline-block;
+            margin-left: -1em;
+            width: 1em
+        }
+        
+        ul>li:before {
+            content: '•'
+        }
+        
+        ol>li:before {
+            content: counter(ol, decimal);
+            counter-increment: ol;
+            font-weight: bold
+        }
+        
+        table {
+            border-spacing: 0;
+            margin-bottom: 1em;
+            text-align: left
+        }
+        
+        th {
+            padding-top: 0.4em
+        }
+        
+        th,
+        td {
+            padding-right: 1.4em;
+            vertical-align: top
+        }
+        
+        code {
+            color: #c35;
+            font-family: Consolas, monospace
+        }
+        
+        div.sourceCode {
+            margin-left: -0.25em;
+            overflow: hidden
+        }
+        
+        pre {
+            background-color: #f8f7f4;
+            border-left: 0.25rem solid #c35;
+            margin-bottom: 0.6rem;
+            margin-top: 0.2rem;
+            overflow-x: auto;
+            padding: 1rem;
+            padding-left: 1.4rem;
+            padding-right: 1.4rem;
+            font-size: 0.9em;
+            line-height: 1.4rem
+        }
+        
+        code.sourceCode {
+            color: #456
+        }
+        
+        .kw,
+        .cf {
+            color: #07a
+        }
+        
+        .dt,
+        .at {
+            color: #d56
+        }
+        
+        .fu {
+            color: #690
+        }
+        
+        .dv,
+        .bn,
+        .fl,
+        .er {
+            color: #905
+        }
+        
+        .ch,
+        .st {
+            color: #d80
+        }
+        
+        .co {
+            color: #789
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+            margin-top: -0.2em;
+            margin-bottom: -0.6em
+        }
+        
+        blockquote {
+            font-style: italic;
+            padding-left: 1em;
+            padding-right: 1em
+        }
+        
+        #teaser-section {
+            background-color: #c35;
+            color: #f5b2c8
+        }
+        
+        #teaser p:first-child {
+            margin-bottom: 0.3em
+        }
+        
+        #teaser a {
+            color: #fff;
+            line-height: 0
+        }
+        
+        #teaser a:after {
+            color: #fff;
+            content: '\a0»'
+        }
+        
+        #teaser>h2 {
+            margin-bottom: 0.2rem;
+            padding-top: 0.5rem
+        }
+        
+        footer {
+            background-color: #234;
+            color: #b4aaaa
+        }
+        
+        #notices {
+            clear: both;
+            text-align: center;
+            padding-top: 1.8em
+        }
+        
+        footer span {
+            margin-left: 0.25em;
+            margin-right: 0.25em
+        }
+        
+        .archive p>a {
+            font-family: 'Lato', sans-serif;
+            line-height: 0
+        }
+        
+        .archive p>a:after {
+            content: '\a0»'
+        }
+        
+        @media(min-width:470px) {
+            html {
+                font-size: 17px
+            }
+            header {
+                margin-left: 2.8em;
+                margin-right: 2.8em
+            }
+        }
+        
+        @media(min-width:625px) {
+            html {
+                font-size: 18px
+            }
+            h1>br {
+                display: block
+            }
+        }
+        
+        @media(min-width:802px) {
+            html {
+                font-size: 19px
+            }
+        }
+        
+        @media(min-width:1003px) {
+            html {
+                font-size: 20px
+            }
+        }
+        
+        @media(min-width:1225px) {
+            html {
+                font-size: 21px
+            }
+            .archive h2 {
+                text-align: right;
+                letter-spacing: 0.5rem;
+                width: 8rem;
+                height: 0;
+                margin-left: -9.5rem;
+                margin-bottom: -0.8rem
+            }
+            #footer {
+                max-width: 42em
+            }
+            footer h2 {
+                margin-left: 3rem
+            }
+            footer nav {
+                float: left;
+                text-align: right;
+                width: 6em;
+                margin-left: -5em
+            }
+            #about {
+                float: right;
+                width: 36em;
+                margin-right: 3em
+            }
+        }
+
+        .so-tag {
+            color: #39739d;
+            background-color: #E1ECF4;
+            font-size: 0.572em;
+            text-transform: lowercase;
+            font-weight: normal;
+            font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+            padding: .4em .5em;
+        }
+
+        .br-print-only {
+            display: none;
+        }
+
+        @media print { 
+            .so-tag {
+                border: 0.1em solid #39739d;
+                padding: .3em .4em;            
+            }
+
+            .br-print-only {
+                display: block;
+            }
+
+        }
+        
+        @media(min-width:1496px) {
+            html {
+                font-size: 22px
+            }
+        }
+        
+        @media(min-width:1736px) {
+            html {
+                font-size: 23px
+            }
+        }
+        
+        @media(min-width:2025px) {
+            html {
+                font-size: 24px
+            }
+        }
+        
+        @media(min-width:400px) {
+            #content,
+            #teaser,
+            #footer {
+                padding-left: 2em;
+                padding-right: 2em
+            }
+        }
+        
+        @media(min-width:544px) {
+            #content,
+            #teaser,
+            #footer {
+                padding-left: 2.8em;
+                padding-right: 2.8em
+            }
+            li {
+                margin-left: 0
+            }
+        }
+        
+        @media(max-width:490px) {
+            #breakdot {
+                display: block;
+                height: 0;
+                overflow: hidden;
+                width: 0
+            }
+        }
+
+        @media print { 
+            * {
+                box-shadow: none!important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <article id="content" itemscope="">
+        <header>
+            <h1>Tomas Kikutis</h1>
+            <h2>Front-End Engineer</h2>
+            <p><a href="mailto:tkikutis@gmail.com">tkikutis@gmail.com</a> | <a href="tel:+37063075928">+37063075928</a> | EU</p>
+        </header>
+
+        <h2>Summary</h2>
+<p>Front-end engineer with <strong>5+ years</strong> of experience in web technologies. Expert in <span class="so-tag">HTML</span> <span class="so-tag">CSS</span> and <span class="so-tag">JavaScript</span> including <span class="so-tag">ES6</span>. Worked with <span class="so-tag">Bootstrap</span> <span class="so-tag">LESS</span> <span class="so-tag">React</span> <span class="so-tag">Redux</span> <span class="so-tag">Ember.js</span> <span class="so-tag">jQuery</span>, and lots of smaller libraries. Experienced with back-end technologies including <span class="so-tag">C#</span> <span class="so-tag">ASP.NET</span> <span class="so-tag">SQL</span> <span class="so-tag">Java</span>.</p>
+<p>Built great things, including <strong>front-end</strong> for an e-commerce platform, <strong>lazy loading</strong>, custom <strong>image carousel</strong>, client-side transaction-based <strong>optimistic updates</strong>, and an implementation of <strong>friendly URLs</strong> without IDs which supports renaming of resources and keeps all historical values working.</p>
+<p>Worked in an <strong>agile</strong> environment, produced <strong>backward-compatible</strong> code, used <strong>version control</strong> (Git and TFS) and feature branches, did refactorings and <strong>deployments</strong>.</p>
+<h2>Skills</h2>
+<h3>Engineering</h3>
+<p>I combine <strong>getting things done</strong> with building and maintaining high-quality codebases. I <strong>do not over-engineer</strong> for futures which might not exist and focus on current business needs. I use as little <strong>abstractions</strong> as necessary to keep things simple, organized and duplication free. I am mindful of the fact of ever-changing requirements and write my code to be easy and safe to change and extend. My code takes advantage of <strong>automated static code analysis</strong> and is mostly written in small, <strong>single-purpose</strong>, and <strong>decoupled modules</strong>. It allows minimizing interdependencies, state, and complexity while increasing deterministic results, ease of understanding, <strong>testing</strong>, and <strong>debugging</strong>. I am experienced at managing source control branches, structuring applications, <strong>refactoring</strong>, and organizing deployments to <strong>minimize risks</strong>.</p>
+<h3>JavaScript</h3>
+<p>Used JavaScript to enhance <strong>server-side</strong> rendered applications as well as built <strong>client-side</strong> rendered applications and components. Implemented a real-time search component, the sidebar component which resizes to fill the screen, client-side exception logging, infinite scroll and more. Used <strong>procedural</strong>, <strong>object-oriented</strong> and <strong>functional</strong> styles of programming depending on the problem domain. I know the tricky parts of the language, including <strong>variable declarations</strong>, <strong>scoping rules</strong>, <strong>hoisting</strong>, <strong>equality comparisons</strong>, <strong>implicit casting</strong>, and ways to work around it. On the contrary, I am glad for not having to deal with that often, thanks to significantly improved tooling around JavaScript, especially <strong>static code analysis</strong>. I have used libraries and frameworks to build user interfaces, including <strong>React</strong> and <strong>Ember.js</strong>. In my experience, libraries which allow to declaratively describe every possible application state works best concerning application simplicity, maintainability, and integrity.</p>
+<h3>HTML and CSS</h3>
+<p>Implemented fixed and <strong>responsive designs</strong> by <strong>W3C standards</strong>, made sure <strong>browser compatibility</strong>, <strong>SEO</strong> and <strong>accessibility</strong> are addressed, and sites are easy to navigate and interact with. I have a good knowledge of the inner workings of CSS including <strong>floats</strong>, <strong>box-model</strong>, <strong>z-indexes</strong>, <strong>positioning</strong>, and working with <strong>dynamic dimensions</strong>. It allows me to produce elegant, minimal, hack-free style sheets as well as debug and track down offending rules with little effort. I have been using <strong>LESS</strong> preprocessor in production and found it helps greatly to keep code consistent, minimal, and repetition-free.</p>
+<h3>Other technologies</h3>
+<p>I enjoy learning new technologies both for fun and to broaden my understanding of how can problems be solved in different ways than I am used to. I have commercially used <strong>C#</strong> with <strong>.NET framework</strong> to build and maintain web <strong>API</strong>s and business logic. I have written <strong>SQL</strong>, used <strong>ORM</strong>s and contributed to <strong>database design</strong> and maintenance. I have also built parts of enterprise android application using <strong>Java</strong> and <strong>SQLite</strong>. In my free time, I have experimented with <strong>MongoDB</strong>, <strong>Firebase</strong>, <strong>Python</strong>, <strong>Scala</strong> and <strong>Node.js</strong>.</p>
+<h2>Open source and personal projects</h2>
+<h3>Html-table-column-hider</h3>
+<p>Authored a small library to hide and unhide columns of an HTML table dynamically. It uses <strong>JavaScript</strong> to generate <strong>CSS3 rules</strong> controlling the visibility of columns. The library is optimized for performance. Most operations are either O(1) or O(n) which allows it to be fast even with tables with <strong>hundreds of rows</strong>. The library is available on <a href="https://www.npmjs.com/package/html-table-column-hider">npm</a>, and there is a live demo on <a href="https://tomaskikutis.github.io/html-table-column-hider/">Github</a>.</p>
+<h3>Web notes</h3>
+<p>Built an <strong>offline-first web application</strong> to take notes. It uses <strong>React.js</strong> <strong>JavaScript</strong> library to render HTML, <strong>Service Worker</strong> API for offline support and has its minimal implementations of <strong>routing and store</strong>. It stores all data in the browser and does not require a server, which allowed me to deploy it on <a href="https://tomaskikutis.github.io/webnotes/">Github</a> easily.</p>
+<h3>Pong clone</h3>
+<p>Built this to learn more about game development and <strong>HTML5 canvas API</strong>. Was blown away with how far can you go with <a href="https://developer.mozilla.org/en-US/docs/Games/Techniques/2D_collision_detection#Axis-Aligned_Bounding_Box">five lines of code</a> for <strong>AABB collision detection</strong>. Demo available on <a href="https://tomaskikutis.github.io/pong/">Github</a>.</p>
+<br class="br-print-only" />
+<br class="br-print-only" />
+<br class="br-print-only" />
+<h2>Work experience</h2>
+<h3>Senior developer</h3>
+<p>BARBORA, Oct 2014 - Present</p>
+<p>Skills used: <span class="so-tag">HTML</span> <span class="so-tag">CSS</span> <span class="so-tag">Bootstrap</span> <span class="so-tag">JavaScript</span> <span class="so-tag">React.js</span> <span class="so-tag">Redux</span> <span class="so-tag">C#</span> <span class="so-tag">ASP.NET Razor</span> <span class="so-tag">ASP.NET Web API</span> <span class="so-tag">ASP.NET Web Forms</span> <span class="so-tag">ASP.NET MVC</span> <span class="so-tag">T-SQL</span> <span class="so-tag">SQL Server</span> <span class="so-tag">Team Foundation Server</span> <span class="so-tag">Java</span> <span class="so-tag">SQLite</span> <span class="so-tag">RegEx</span></p>
+
+<ul>
+    <li>Built and maintained a web front-end for groceries delivery company.</li>
+    <li>Used <strong>C#</strong> and <strong>Razor</strong> templating language to render the <strong>HTML</strong> on the back-end, and built <strong>React.js</strong> components for most interaction intensive views like a shopping cart.</li>
+    <li>Integrated and extended <strong>Web APIs</strong> and <strong>business logic</strong>.</li>
+    <li>Helped a team to maintain internal web-based administration system.</li>
+    <li>Built parts of an internal <strong>android application</strong> and integrated <strong>open street maps</strong> to be used by delivery people to manage the process.</li>
+    <li><strong>Mentored</strong> junior developers, proposed and contributed to technology and architecture decisions as well as helped to maintain and configure infrastructure.</li>
+    <li>Made manual <strong>deployments</strong> and wrote scripts to automate the process.</li>
+</ul>
+
+<h3>Developer</h3>
+<p>CLAIMS CONTROL, Aug 2013 - Oct 2014</p>
+<p>Skills used: <span class="so-tag">HTML</span> <span class="so-tag">CSS</span> <span class="so-tag">Bootstrap</span> <span class="so-tag">JavaScript</span> <span class="so-tag">Ember.js</span> <span class="so-tag">jQuery</span> <span class="so-tag">RegEx</span> <span class="so-tag">Photoshop</span></p>
+
+<ul>
+    <li>Have extended user interface for single page <strong>Ember.js</strong> application aimed at managing insurance claims.</li>
+    <li>Implemented design specifications and fixed <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong> bugs.</li>
+    <li>Built a <strong>landing page</strong> using provided design.</li>
+    <li><strong>Researched</strong> technical solutions for business problems.</li>
+</ul>
+
+<h3>Front-end developer</h3>
+<p>Freelance, 2010 - 2013</p>
+<p>Skills used: <span class="so-tag">HTML</span> <span class="so-tag">CSS</span> <span class="so-tag">JavaScript</span> <span class="so-tag">jQuery</span> <span class="so-tag">Wordpress</span> <span class="so-tag">Photoshop</span></p>
+
+<ul>
+    <li>Implemented designs from client supplied specifications by adhering to <strong>W3C standards</strong>.</li>
+    <li>Supported <strong>cross-browser compatibility</strong> down to <strong>Internet explorer 7</strong>.</li>
+    <li>Designed and implemented interactive effects using <strong>JavaScript</strong> and related libraries - mostly <strong>jQuery</strong> and its plugin ecosystem.</li>
+    <li><strong>Optimized</strong> for performance using <strong>CSS sprites</strong>, <strong>minification</strong>, and image optimization.</li>
+</ul>
+
+</body>
+
+</html>
